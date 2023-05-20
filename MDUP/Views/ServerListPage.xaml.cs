@@ -1,6 +1,6 @@
-﻿using Microsoft.UI.Xaml.Controls;
+﻿using MDUP.ViewModels;
 
-using MDUP.ViewModels;
+using Microsoft.UI.Xaml.Controls;
 
 namespace MDUP.Views;
 
