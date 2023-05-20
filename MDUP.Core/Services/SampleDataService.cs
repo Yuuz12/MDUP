@@ -32,27 +32,17 @@ public class SampleDataService : ISampleDataService
             new SampleCompany()
             {
                 CompanyID = "ALFKI",
-                CompanyName = "Company A",
+                CompanyName = "Server A",
                 ContactName = "Maria Anders",
-                ContactTitle = "Sales Representative",
-                Address = "Obere Str. 57",
-                City = "Berlin",
-                PostalCode = "12209",
-                Country = "Germany",
-                Phone = "030-0074321",
-                Fax = "030-0076545",
                 Orders = new List<SampleOrder>()
                 {
                     new SampleOrder()
                     {
-                        OrderID = 10643, // Symbol Globe
                         OrderDate = new DateTime(1997, 8, 25),
-                        RequiredDate = new DateTime(1997, 9, 22),
-                        ShippedDate = new DateTime(1997, 9, 22),
                         ShipperName = "Speedy Express",
                         ShipperPhone = "(503) 555-9831",
                         Freight = 29.46,
-                        Company = "Company A",
+                        Company = "Server A",
                         ShipTo = "Company A, Obere Str. 57, Berlin, 12209, Germany",
                         OrderTotal = 814.50,
                         Status = "Shipped",
@@ -100,49 +90,6 @@ public class SampleDataService : ISampleDataService
                     },
                     new SampleOrder()
                     {
-                        OrderID = 10835, // Symbol Music
-                        OrderDate = new DateTime(1998, 1, 15),
-                        RequiredDate = new DateTime(1998, 2, 12),
-                        ShippedDate = new DateTime(1998, 1, 21),
-                        ShipperName = "Federal Shipping",
-                        ShipperPhone = "(503) 555-9931",
-                        Freight = 69.53,
-                        Company = "Company A",
-                        ShipTo = "Company A, Obere Str. 57, Berlin, 12209, Germany",
-                        OrderTotal = 845.80,
-                        Status = "Closed",
-                        SymbolCode = 57737,
-                        SymbolName = "Audio",
-                        Details = new List<SampleOrderDetail>()
-                        {
-                            new SampleOrderDetail()
-                            {
-                                ProductID = 59,
-                                ProductName = "Raclette Courdavault",
-                                Quantity = 15,
-                                Discount = 0,
-                                QuantityPerUnit = "5 kg pkg.",
-                                UnitPrice = 55.00,
-                                CategoryName = "Dairy Products",
-                                CategoryDescription = "Cheeses",
-                                Total = 825.00
-                            },
-                            new SampleOrderDetail()
-                            {
-                                ProductID = 77,
-                                ProductName = "Original Frankfurter grüne Soße",
-                                Quantity = 2,
-                                Discount = 0.2,
-                                QuantityPerUnit = "12 boxes",
-                                UnitPrice = 13.0,
-                                CategoryName = "Condiments",
-                                CategoryDescription = "Sweet and savory sauces, relishes, spreads, and seasonings",
-                                Total = 20.80
-                            }
-                        }
-                    },
-                    new SampleOrder()
-                    {
                         OrderID = 10952, // Symbol Calendar
                         OrderDate = new DateTime(1998, 3, 16),
                         RequiredDate = new DateTime(1998, 4, 27),
@@ -150,7 +97,7 @@ public class SampleDataService : ISampleDataService
                         ShipperName = "Speedy Express",
                         ShipperPhone = "(503) 555-9831",
                         Freight = 40.42,
-                        Company = "Company A",
+                        Company = "Server B",
                         ShipTo = "Company A, Obere Str. 57, Berlin, 12209, Germany",
                         OrderTotal = 471.20,
                         Status = "Closed",
@@ -209,7 +156,7 @@ public class SampleDataService : ISampleDataService
                         ShipperName = "Speedy Express",
                         ShipperPhone = "(503) 555-9831",
                         Freight = 43.90,
-                        Company = "Company F",
+                        Company = "Server C",
                         ShipTo = "Company F, Avda. de la Constitución 2222, 05021, México D.F., Mexico",
                         OrderTotal = 469.75,
                         Status = "Shipped",
@@ -264,7 +211,7 @@ public class SampleDataService : ISampleDataService
                         ShipperName = "Federal Shipping",
                         ShipperPhone = "(503) 555-9931",
                         Freight = 39.92,
-                        Company = "Company F",
+                        Company = "Server D",
                         ShipTo = "Company F, Avda. de la Constitución 2222, 05021, México D.F., Mexico",
                         OrderTotal = 507.20,
                         Status = "Shipped",
@@ -324,175 +271,6 @@ public class SampleDataService : ISampleDataService
                     }
                 }
             },
-            new SampleCompany()
-            {
-                CompanyID = "ANTON",
-                CompanyName = "Company Z",
-                ContactName = "Antonio Moreno",
-                ContactTitle = "Owner",
-                Address = "Mataderos  2312",
-                City = "México D.F.",
-                PostalCode = "05023",
-                Country = "Mexico",
-                Phone = "(5) 555-3932",
-                Fax = string.Empty,
-                Orders = new List<SampleOrder>()
-                {
-                    new SampleOrder()
-                    {
-                        OrderID = 10507, // Symbol Contact
-                        OrderDate = new DateTime(1997, 4, 15),
-                        RequiredDate = new DateTime(1997, 5, 13),
-                        ShippedDate = new DateTime(1997, 4, 22),
-                        ShipperName = "Speedy Express",
-                        ShipperPhone = "(503) 555-9831",
-                        Freight = 47.45,
-                        Company = "Company Z",
-                        ShipTo = "Company Z, Mataderos  2312, 05023, México D.F., Mexico",
-                        OrderTotal = 978.50,
-                        Status = "Closed",
-                        SymbolCode = 57661,
-                        SymbolName = "Contact",
-                        Details = new List<SampleOrderDetail>()
-                        {
-                            new SampleOrderDetail()
-                            {
-                                ProductID = 43,
-                                ProductName = "Ipoh Coffee",
-                                Quantity = 15,
-                                Discount = 0.15,
-                                QuantityPerUnit = "16 - 500 g tins",
-                                UnitPrice = 46.0,
-                                CategoryName = "Beverages",
-                                CategoryDescription = "Soft drinks, coffees, teas, beers, and ales",
-                                Total = 816.00
-                            },
-                            new SampleOrderDetail()
-                            {
-                                ProductID = 48,
-                                ProductName = "Chocolade",
-                                Quantity = 15,
-                                Discount = 0.15,
-                                QuantityPerUnit = "10 pkgs.",
-                                UnitPrice = 12.75,
-                                CategoryName = "Confections",
-                                CategoryDescription = "Desserts, candies, and sweet breads",
-                                Total = 162.50
-                            }
-                        }
-                    },
-                    new SampleOrder()
-                    {
-                        OrderID = 10573, // Symbol Star
-                        OrderDate = new DateTime(1997, 6, 19),
-                        RequiredDate = new DateTime(1997, 7, 17),
-                        ShippedDate = new DateTime(1997, 6, 20),
-                        ShipperName = "Federal Shipping",
-                        ShipperPhone = "(503) 555-9931",
-                        Freight = 84.84,
-                        Company = "Company Z",
-                        ShipTo = "Company Z, Mataderos  2312, 05023, México D.F., Mexico",
-                        OrderTotal = 2082.00,
-                        Status = "Closed",
-                        SymbolCode = 57619,
-                        SymbolName = "Favorite",
-                        Details = new List<SampleOrderDetail>()
-                        {
-                            new SampleOrderDetail()
-                            {
-                                ProductID = 17,
-                                ProductName = "Alice Mutton",
-                                Quantity = 18,
-                                Discount = 0,
-                                QuantityPerUnit = "20 - 1 kg tins",
-                                UnitPrice = 39.00,
-                                CategoryName = "Meat/Poultry",
-                                CategoryDescription = "Prepared meats",
-                                Total = 702.00
-                            },
-                            new SampleOrderDetail()
-                            {
-                                ProductID = 34,
-                                ProductName = "Sasquatch Ale",
-                                Quantity = 40,
-                                Discount = 0,
-                                QuantityPerUnit = "24 - 12 oz bottles",
-                                UnitPrice = 14.0,
-                                CategoryName = "Beverages",
-                                CategoryDescription = "Soft drinks, coffees, teas, beers, and ales",
-                                Total = 560.00
-                            },
-                            new SampleOrderDetail()
-                            {
-                                ProductID = 53,
-                                ProductName = "Perth Pasties",
-                                Quantity = 25,
-                                Discount = 0,
-                                QuantityPerUnit = "48 pieces",
-                                UnitPrice = 32.80,
-                                CategoryName = "Meat/Poultry",
-                                CategoryDescription = "Prepared meats",
-                                Total = 820.00
-                            }
-                        }
-                    },
-                    new SampleOrder()
-                    {
-                        OrderID = 10682, // Symbol Home
-                        OrderDate = new DateTime(1997, 9, 25),
-                        RequiredDate = new DateTime(1997, 10, 23),
-                        ShippedDate = new DateTime(1997, 10, 1),
-                        ShipperName = "United Package",
-                        ShipperPhone = "(503) 555-3199",
-                        Freight = 36.13,
-                        Company = "Company Z",
-                        ShipTo = "Company Z, Mataderos  2312, 05023, México D.F., Mexico",
-                        OrderTotal = 375.50,
-                        Status = "Closed",
-                        SymbolCode = 57615,
-                        SymbolName = "Home",
-                        Details = new List<SampleOrderDetail>()
-                        {
-                            new SampleOrderDetail()
-                            {
-                                ProductID = 33,
-                                ProductName = "Geitost",
-                                Quantity = 30,
-                                Discount = 0,
-                                QuantityPerUnit = "500 g",
-                                UnitPrice = 2.50,
-                                CategoryName = "Dairy Products",
-                                CategoryDescription = "Cheeses",
-                                Total = 75.00
-                            },
-                            new SampleOrderDetail()
-                            {
-                                ProductID = 66,
-                                ProductName = "Louisiana Hot Spiced Okra",
-                                Quantity = 4,
-                                Discount = 0,
-                                QuantityPerUnit = "24 - 8 oz jars",
-                                UnitPrice = 17.00,
-                                CategoryName = "Condiments",
-                                CategoryDescription = "Sweet and savory sauces, relishes, spreads, and seasonings",
-                                Total = 68.00
-                            },
-                            new SampleOrderDetail()
-                            {
-                                ProductID = 75,
-                                ProductName = "Rhönbräu Klosterbier",
-                                Quantity = 30,
-                                Discount = 0,
-                                QuantityPerUnit = "24 - 0.5 l bottles",
-                                UnitPrice = 7.75,
-                                CategoryName = "Beverages",
-                                CategoryDescription = "Soft drinks, coffees, teas, beers, and ales",
-                                Total = 232.50
-                            }
-                        }
-                    }
-                }
-            }
         };
     }
 
