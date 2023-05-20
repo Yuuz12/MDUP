@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "MDUP (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "MDUP (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}

@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="MDUP.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ContentArea">
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Standard XAML button" />
+            <Button Style="{StaticResource AccentButtonStyle}" Content="Accent style button" />
+            <Slider x:Name="Slider" AutomationProperties.Name="simple slider" Width="200"/>
+            <TextBlock Text="{Binding ElementName=Slider,Path=Value}"/>
+            <ComboBox Header="颜色" PlaceholderText="Pick a color" Width="200">
+                <x:String>蓝色</x:String>
+                <x:String>绿色</x:String>
+                <x:String>红色</x:String>
+                <x:String>黄色</x:String>
+            </ComboBox>
+        </StackPanel>
+    </Grid>
+</Page>
