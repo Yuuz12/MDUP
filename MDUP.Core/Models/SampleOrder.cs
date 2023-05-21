@@ -13,30 +13,30 @@ public class SampleOrder
         get; set;
     }
 
-    public DateTime RequiredDate
-    {
-        get; set;
-    }
+    //public DateTime RequiredDate
+    //{
+    //    get; set;
+    //}
 
-    public DateTime ShippedDate
-    {
-        get; set;
-    }
+    //public DateTime ShippedDate
+    //{
+    //    get; set;
+    //}
 
-    public string ShipperName
-    {
-        get; set;
-    }
+    //public string ShipperName
+    //{
+    //    get; set;
+    //}
 
-    public string ShipperPhone
-    {
-        get; set;
-    }
+    //public string ShipperPhone
+    //{
+    //    get; set;
+    //}
 
-    public double Freight
-    {
-        get; set;
-    }
+    //public double Freight
+    //{
+    //    get; set;
+    //}
 
     public string Company
     {
@@ -48,7 +48,7 @@ public class SampleOrder
         get; set;
     }
 
-    public double OrderTotal
+    public DateTime OrderTotal
     {
         get; set;
     }

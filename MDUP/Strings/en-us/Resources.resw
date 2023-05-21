@@ -100,4 +100,7 @@
   <data name="Shell_ServerList_Test.Content" xml:space="preserve">
     <value>ServerList_Test</value>
   </data>
+  <data name="Shell_empty.Content" xml:space="preserve">
+    <value>empty</value>
+  </data>
 </root>

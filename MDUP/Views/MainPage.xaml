@@ -8,7 +8,7 @@
 
     <Grid x:Name="ContentArea">
         <StackPanel Orientation="Horizontal">
-            <Button Content="Standard XAML button" />
+            <Button Content="添加服务器" />
             <Button Style="{StaticResource AccentButtonStyle}" Content="Accent style button" />
             <Slider x:Name="Slider" AutomationProperties.Name="simple slider" Width="200"/>
             <TextBlock Text="{Binding ElementName=Slider,Path=Value}"/>

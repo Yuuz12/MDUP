@@ -18,6 +18,7 @@ public class PageService : IPageService
         Configure<SettingsViewModel, SettingsPage>();
         Configure<ServerListViewModel, ServerListPage>();
         Configure<ServerListDetailViewModel, ServerListDetailPage>();
+        Configure<emptyViewModel, emptyPage>();
     }
 
     public Type GetPageType(string key)

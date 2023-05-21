@@ -35,21 +35,23 @@ public class SampleDataService : ISampleDataService
                 {
                     new SampleOrder()
                     {
-                        OrderDate = new DateTime(1997, 8, 30),
+                        OrderID = 114514,
+                        OrderDate = new DateTime(2023, 5, 22),
                         Company = "Server A",
-                        Status = "Shipped",
-                        ShipTo = "Company A, Obere Str. 57, Berlin, 12209, Germany",
-                        OrderTotal = 814.50,
+                        Status = "在线",
+                        ShipTo = "114.514",
+                        OrderTotal = new DateTime(2023, 5, 22),
                         SymbolCode = 57643,
                         SymbolName = "Globe",
                     },
                     new SampleOrder()
                     {
+                        OrderID = 114515,
                         OrderDate = new DateTime(1997, 8, 30),
                         Company = "Server B",
-                        Status = "Shipped",
-                        ShipTo = "Company A, Obere Str. 57, Berlin, 12209, Germany",
-                        OrderTotal = 814.50,
+                        Status = "离线",
+                        ShipTo = "114.514",
+                        OrderTotal = new DateTime(1997, 8, 30),
                         SymbolCode = 57643,
                         SymbolName = "Globe",
                     },
@@ -61,21 +63,23 @@ public class SampleDataService : ISampleDataService
                 {
                     new SampleOrder()
                     {
+                        OrderID = 114516,
                         OrderDate = new DateTime(1997, 8, 30),
-                        Company = "Server B",
-                        Status = "Shipped",
-                        ShipTo = "Company A, Obere Str. 57, Berlin, 12209, Germany",
-                        OrderTotal = 814.50,
+                        Company = "Server C",
+                        Status = "未知",
+                        ShipTo = "114.514",
+                        OrderTotal = new DateTime(1997, 8, 30),
                         SymbolCode = 57643,
                         SymbolName = "Globe",
                     },
                     new SampleOrder()
                     {
+                        OrderID = 114517,
                         OrderDate = new DateTime(1997, 8, 30),
-                        Company = "Server B",
-                        Status = "Shipped",
-                        ShipTo = "Company A, Obere Str. 57, Berlin, 12209, Germany",
-                        OrderTotal = 814.50,
+                        Company = "Server D",
+                        Status = "位置",
+                        ShipTo = "114.514",
+                        OrderTotal = new DateTime(1997, 8, 30),
                         SymbolCode = 57643,
                         SymbolName = "Globe",
                     },

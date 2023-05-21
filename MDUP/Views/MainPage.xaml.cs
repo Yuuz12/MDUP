@@ -2,6 +2,11 @@
 
 using MDUP.ViewModels;
 using Microsoft.UI.Xaml;
+using MDUP.Core.Models;
+using MDUP.Core.Services;
+using MDUP.Services;
+using System.Collections.ObjectModel;
+using CommunityToolkit.WinUI.UI.Animations;
 
 namespace MDUP.Views;
 
